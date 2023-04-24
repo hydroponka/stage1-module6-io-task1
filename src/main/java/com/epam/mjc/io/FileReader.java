@@ -17,8 +17,7 @@ public class FileReader {
             age = bf.readLine().split(": ")[1];
             email = bf.readLine().split(": ")[1];
             phone = bf.readLine().split(": ")[1];
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
